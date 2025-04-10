@@ -19,7 +19,7 @@
 > Verificar se no trecho `var db = mysql.createConnection({...})` encontrado no arquivo `/app.js` as configurações correspondem ao seu MySql que está rodando localmente.
 
 > **Ponto de atenção 2**  
-> Por problemas de compatibilidade da versão tradicional do mysql, foi utilizado o seguinte pacote no arquivo `/app.js`: `var mysql = require('mysql2');`. É pra funcionar normalmente em qualquer caso, mas em casos de problema rodando localmente, altere para `var mysql = require('mysql');`.
+> Por problemas de compatibilidade da versão tradicional do mysql com Docker, foi utilizado o seguinte pacote no arquivo `/app.js`: `var mysql = require('mysql2');`. É pra funcionar normalmente em qualquer caso, mas em casos de problema rodando localmente, altere para `var mysql = require('mysql');`.
 
 #### Passo a passo
 Abra a pasta `/backend/` na sua linha de comando e execute o seguinte comando:
